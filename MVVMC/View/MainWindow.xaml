@@ -1,0 +1,139 @@
+﻿<Window x:Class="MVVMC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVVMC"
+        mc:Ignorable="d"
+        
+        Title="Store..." MaxHeight="625" MaxWidth="1096" MinHeight="625" MinWidth="1096" Icon="C:\Users\Aogiri\source\repos\MVVMC\MVVMC\Resources\server_computer_pc_5439.ico">
+    <Grid>
+       
+        <Grid.RowDefinitions>
+            <RowDefinition Height="97*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="474*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Content="Computers" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 0 100 0"/>
+            <Border Height="50" Width="100" HorizontalAlignment="Right" CornerRadius="20" Margin="5 0 0 0" Style="{StaticResource Bd}">
+                <Label Grid.Column="0" Content="Store" Margin="0 0 0 0" FontSize="30" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="#ffff"/>
+            </Border>
+            <TextBox x:Name="Search" Grid.Column="1" Height="25" Width="200"/>
+            <Button Grid.Column="1" Height="35" Width="35" Style="{DynamicResource SearchB}" Margin="235 0 0 0" />
+            <Grid Grid.Column="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="1" Height="60" Width="60" Style="{DynamicResource Cart}" Click="Button_Click"/>
+                <Button x:Name="auth" Grid.Column="2" Height="40" Width="40" Style="{DynamicResource Sign}" Click="Button_Click_1"/>
+            </Grid>
+
+        </Grid>
+        <Grid Grid.Row="1">
+
+            <Border Background="DarkGray" Grid.Column="0">
+                <Grid RenderTransformOrigin="0.263,0.501">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="36*"/>
+                        <ColumnDefinition Width="101*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Content="На главную" Background="DarkGray" BorderThickness="0 0 1 0 " BorderBrush="Black" Foreground="White" Click="Button_Click_2"/>
+                </Grid>
+
+            </Border>
+            <Border Background="LightGray" Grid.Column="1">
+
+            </Border>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="37*"/>
+                <ColumnDefinition Width="237*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1" Background="GhostWhite">
+                <StackPanel Orientation="Vertical" >
+                    <Border x:Name="br1" CornerRadius="10" Background="White">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="10" Color="DarkGray"/>
+                        </Border.Effect>
+                        <StackPanel Orientation="Horizontal" Height="131">
+                            <Image Source="C:\Users\Aogiri\source\repos\MVVMC\MVVMC\Resources\pk1.jpg" Height="125" Margin="10 0 0 0"/>
+                            <TextBlock>
+                           
+                                <Label x:Name="comp1" Content="Игровой компьютер XAJTY" FontWeight="Bold" Margin="0 30 0 0"/>
+                                <LineBreak/>
+                                <Label Content="Intel Core i5 10400F"/>
+                                <LineBreak/>
+                               <Label Content="Geforce RTX 3060"/>
+                                <LineBreak/>
+                                <Label Content="92.000 руб" FontWeight="Bold"/>
+                            
+
+
+                            </TextBlock>
+                            <Button Content="В корзину" Height="30" Margin="390 0 0 0" Style="{DynamicResource Carzb}" Width="100" Click="Button_Click_4"/>
+                        </StackPanel>
+                    </Border>
+                    <Border x:Name="br2" CornerRadius="10" Background="White" Margin="0 10 0 0">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="10" Color="DarkGray"/>
+                        </Border.Effect>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="C:\Users\Aogiri\source\repos\MVVMC\MVVMC\Resources\pk2.jpg" Height="140" Margin="70 0 0 0"/>
+                            <TextBlock>
+                                <Label x:Name="comp2" Content="Игровой компьютер HyperPC Lumen" FontWeight="Bold"/>
+                                <LineBreak/>
+                                <Label Content="Характеристики"/>
+                                <LineBreak/>
+                                <Label Content="Intel Core i5 13400F"/>
+                                <LineBreak/>
+                                <Label Content="Palit RTX 4060Ti Dual"/>
+                                <LineBreak/>
+                                <Label Content="237.900 руб." FontWeight="Bold"/>
+                               
+
+                            </TextBlock>
+                            <Button Content="В корзину" Margin="360 0 0 0" Height="30" Width="103" Style="{DynamicResource Carzb}" Click="Button_Click_5"/>
+                        </StackPanel>
+                    </Border>
+                    <Border x:Name="br3" CornerRadius="10" Background="White" Margin="0 10 0 0">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="10" Color="DarkGray"/>
+                        </Border.Effect>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="C:\Users\Aogiri\source\repos\MVVMC\MVVMC\Resources\pk3.jpg" Height="140" Margin="70 0 0 0" Width="148"/>
+                            <TextBlock>
+                                <Label x:Name="comp3"  Content="GamingPC" FontWeight="Bold"/>
+                                <LineBreak/>
+                                <Label Content="Характеристики"/>
+                                <LineBreak/>
+                                <Label Content="Ryzen 5 3600"/>
+                                <LineBreak/>
+                                <Label Content="RTX 2060 SUPER"/>
+                                <LineBreak/>
+                                <Label Content="75.000 руб" FontWeight="bold"/>
+                            </TextBlock>
+                            <Button Content="В корзину" Margin="479 0 0 0" Height="30" Width="103" Style="{DynamicResource Carzb}" Click="Button_Click_3"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <Frame x:Name="Main" NavigationUIVisibility="Hidden"/>
+            </Grid>
+        </Grid>
+        
+    </Grid>
+</Window>

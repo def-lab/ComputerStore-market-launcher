@@ -1,0 +1,22 @@
+﻿<Page x:Class="MVVMC.Carz"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MVVMC"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800" Background="White"
+      Title="Carz">
+
+    <Canvas x:Name="Gr">
+        <StackPanel Orientation="Vertical">
+            <StackPanel x:Name="cr" Orientation="Vertical">
+            
+            </StackPanel>
+             <StackPanel Orientation="Horizontal">
+                <Button x:Name="Buttonka" Content="Купить" Visibility="Collapsed"/>
+                <Label x:Name="PRICE" Visibility="Collapsed"/>
+            </StackPanel>
+        </StackPanel>
+    </Canvas>
+</Page>
