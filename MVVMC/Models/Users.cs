@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MVVMC.ViewModel
 {
-    class User
+   public class User
     {
         public int id { get; set; }
         public string login { get; set; }

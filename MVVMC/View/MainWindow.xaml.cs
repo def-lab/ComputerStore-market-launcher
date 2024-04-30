@@ -27,12 +27,15 @@ namespace MVVMC
         Product a = new Product(1);
         Product b = new Product(2);
         Product c = new Product(3);
+        public bool authh = false;
+        public string log;
 
 
         public MainWindow()
         {
             
             InitializeComponent();
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

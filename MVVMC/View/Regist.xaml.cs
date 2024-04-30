@@ -22,6 +22,8 @@ namespace MVVMC.View
     public partial class Regist : Page
     {
         AppContext DB;
+        public User authuser;
+        public bool auth = false;
         public Regist()
         {
             InitializeComponent();
@@ -29,7 +31,7 @@ namespace MVVMC.View
             
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void Button_Click(object sender, RoutedEventArgs e)
         {
             LogIn.Visibility = Visibility.Collapsed;
             Sign.Visibility = Visibility.Visible;
@@ -38,14 +40,14 @@ namespace MVVMC.View
 
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        public void Button_Click_1(object sender, RoutedEventArgs e)
         {
             LogIn.Visibility = Visibility.Visible;
             Sign.Visibility = Visibility.Collapsed;
 
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        public void Button_Click_2(object sender, RoutedEventArgs e)
         {
             if (Log1.Text.Length < 5)
             {
@@ -73,24 +75,32 @@ namespace MVVMC.View
 
         }
 
-        private void Button_Click_3(object sender, RoutedEventArgs e)
+        public void Button_Click_3(object sender, RoutedEventArgs e)
         {
             string login = Log2.Text;
             string password = Pass2.Password;
             AppContext context = new AppContext();
-            User authuser = null;
+            authuser = null;
             authuser = context.Users.Where(b => b.login == login && b.password == password).FirstOrDefault();
             if(authuser != null)
             {
                 ((MainWindow)Application.Current.MainWindow).auth.Visibility = Visibility.Collapsed;
+                ((MainWindow)Application.Current.MainWindow).authh = true;
+                ((MainWindow)Application.Current.MainWindow).log = authuser.login;
                 ((MainWindow)Application.Current.MainWindow).Main.Content = new Gl();
+                
                 MessageBox.Show("Добро пожаловать!");
+               
                 
             }
             else
             {
                 MessageBox.Show("Данные введены не верно");
             }
+        }
+        public string getLogin()
+        {
+            return authuser.login;
         }
     }
 }

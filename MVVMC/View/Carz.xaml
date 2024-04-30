@@ -14,7 +14,7 @@
             
             </StackPanel>
              <StackPanel Orientation="Horizontal">
-                <Button x:Name="Buttonka" Content="Купить" Visibility="Collapsed"/>
+                <Button x:Name="Buttonka" Content="Купить" Visibility="Collapsed" Click="Buttonka_Click"/>
                 <Label x:Name="PRICE" Visibility="Collapsed"/>
             </StackPanel>
         </StackPanel>

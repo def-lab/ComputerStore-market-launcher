@@ -74,6 +74,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\Class1.cs" />
     <Compile Include="View\Regist.xaml.cs">
       <DependentUpon>Regist.xaml</DependentUpon>
     </Compile>
@@ -165,6 +166,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\server_computer_pc_5439.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\oreder.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
