@@ -1,5 +1,1 @@
-Xanax123	HyperPC Lumen:2	GamingPC:2
-AogiriSSS	Игровой компьютер XYJTV:2
-AogiriSSS	Игровой компьютер XYJTV:1	HyperPC Lumen:1	GamingPC:1
-AogiriSSS	Игровой компьютер XYJTV:1	HyperPC Lumen:4	GamingPC:1
-AogiriSSS	Игровой компьютер XYJTV:1	HyperPC Lumen:4	GamingPC:6
+EvaVej	GamingPC:1

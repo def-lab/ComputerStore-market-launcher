@@ -190,8 +190,8 @@ namespace MVVMC
                     text += "\t" + "GamingPC:" + busc.a[3];
                 }
                 MessageBox.Show("Заказ оформлен, скоро мы с вами свяжемся");
-                
-                StreamWriter sw = new StreamWriter("C:\\Users\\Aogiri\\source\\repos\\MVVMC\\MVVMC\\Resources\\oreder.txt",true);
+
+                StreamWriter sw = new StreamWriter(@"C:\\Users\\vinsi\\Source\\Repos\\ComputerStore-market-launcer-s\\MVVMC\\Resources\\oreder.txt", true);
                 sw.WriteLine(text);
                 sw.Close();
 

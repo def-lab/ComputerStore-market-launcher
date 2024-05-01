@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:MVVMC"
         mc:Ignorable="d"
         
-        Title="Store..." MaxHeight="625" MaxWidth="1096" MinHeight="625" MinWidth="1096" Icon="C:\Users\Aogiri\source\repos\MVVMC\MVVMC\Resources\server_computer_pc_5439.ico">
+        Title="Store..." MaxHeight="625" MaxWidth="1096" MinHeight="625" MinWidth="1096" Icon="C:\Users\vinsi\Source\Repos\ComputerStore-market-launcer-s\MVVMC\Resources\server_computer_pc_5439.ico">
     <Grid>
        
         <Grid.RowDefinitions>
@@ -71,7 +71,7 @@
                             <DropShadowEffect BlurRadius="10" Color="DarkGray"/>
                         </Border.Effect>
                         <StackPanel Orientation="Horizontal" Height="131">
-                            <Image Source="C:\Users\Aogiri\source\repos\MVVMC\MVVMC\Resources\pk1.jpg" Height="125" Margin="10 0 0 0"/>
+                            <Image Source="C:\Users\vinsi\Source\Repos\ComputerStore-market-launcer-s\MVVMC\Resources\pk1.jpg" Height="125" Margin="10 0 0 0"/>
                             <TextBlock>
                            
                                 <Label x:Name="comp1" Content="Игровой компьютер XAJTY" FontWeight="Bold" Margin="0 30 0 0"/>
@@ -93,7 +93,7 @@
                             <DropShadowEffect BlurRadius="10" Color="DarkGray"/>
                         </Border.Effect>
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="C:\Users\Aogiri\source\repos\MVVMC\MVVMC\Resources\pk2.jpg" Height="140" Margin="70 0 0 0"/>
+                            <Image Source="C:\Users\vinsi\Source\Repos\ComputerStore-market-launcer-s\MVVMC\Resources\pk2.jpg" Height="140" Margin="70 0 0 0"/>
                             <TextBlock>
                                 <Label x:Name="comp2" Content="Игровой компьютер HyperPC Lumen" FontWeight="Bold"/>
                                 <LineBreak/>
@@ -115,7 +115,7 @@
                             <DropShadowEffect BlurRadius="10" Color="DarkGray"/>
                         </Border.Effect>
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="C:\Users\Aogiri\source\repos\MVVMC\MVVMC\Resources\pk3.jpg" Height="140" Margin="70 0 0 0" Width="148"/>
+                            <Image Source="C:\Users\vinsi\Source\Repos\ComputerStore-market-launcer-s\MVVMC\Resources\pk3.jpg" Height="140" Margin="70 0 0 0" Width="148"/>
                             <TextBlock>
                                 <Label x:Name="comp3"  Content="GamingPC" FontWeight="Bold"/>
                                 <LineBreak/>
