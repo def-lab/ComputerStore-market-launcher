@@ -9,7 +9,7 @@
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
                         <Border>
-                            <Image Source="C:\Users\vinsi\Source\Repos\ComputerStore-market-launcer-s\MVVMC\Resources\magnifyingglasssearchbutton_99742.png"/>
+                            <Image Source="Resources/magnifyingglasssearchbutton_99742.png"/>
 
                         </Border>
                         <ControlTemplate.Triggers>
@@ -27,7 +27,7 @@
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
                         <Border>
-                            <Image Source="C:\Users\vinsi\Source\Repos\ComputerStore-market-launcer-s\MVVMC\Resources\arrow.png"/>
+                            <Image Source="Resources/arrow.png"/>
                         </Border>
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsPressed" Value="True">
@@ -43,7 +43,7 @@
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
                         <Border>
-                            <Image Source="C:\Users\vinsi\Source\Repos\ComputerStore-market-launcer-s\MVVMC\Resources\cart_12805222.png"/>
+                            <Image Source="Resources/cart_12805222.png"/>
                             
                         </Border>
                         <ControlTemplate.Triggers>
